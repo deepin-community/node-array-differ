@@ -1,0 +1,25 @@
+Source: node-array-differ
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Sruthi Chandran <srud@disroot.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , node-tape <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-array-differ
+Vcs-Git: https://salsa.debian.org/js-team/node-array-differ.git
+Homepage: https://github.com/sindresorhus/array-differ#readme
+Rules-Requires-Root: no
+
+Package: node-array-differ
+Architecture: all
+Depends: ${misc:Depends}
+ , nodejs
+Multi-Arch: foreign
+Description: Create an array with values present in the first input array
+ Create an array with values that are present in the first input array
+ but not additional ones
+ .
+ Node.js is an event-based server-side JavaScript engine.
